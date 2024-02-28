@@ -1,7 +1,7 @@
 import React from "react";
-import "./button.css";
+import "./hamburgerIcon.css";
 
-interface ButtonProps {
+interface HamburgerIconProps {
   primary?: boolean;
 
   backgroundColor?: string;
@@ -13,21 +13,21 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button = ({
+export const HamburgerIcon = ({
   primary = false,
   size = "medium",
   backgroundColor,
   label,
   ...props
-}: ButtonProps) => {
+}: HamburgerIconProps) => {
   const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+    ? "styles-too-hamburgerIcon--primary"
+    : "styles-too-hamburgerIcon--secondary";
 
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
+      className={["styles-too-button", `styles-too-button--${size}`, mode].join(
         " "
       )}
       style={{ backgroundColor }}
@@ -38,4 +38,4 @@ export const Button = ({
   );
 };
 
-export default Button;
+export default HamburgerIcon;

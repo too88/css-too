@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "./button";
+import { HamburgerIcon } from "./HamburgerIcon";
 
-const meta: Meta<typeof Button> = {
-  component: Button,
+const meta: Meta<typeof HamburgerIcon> = {
+  component: HamburgerIcon,
 };
 
 export default meta;
