@@ -1,40 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./hamburgerIcon.css";
 
 interface HamburgerIconProps {
-  primary?: boolean;
-
-  backgroundColor?: string;
-
-  size?: "small" | "medium" | "large";
-
-  label: string;
-
-  onClick?: () => void;
+  type?: number;
 }
 
-export const HamburgerIcon = ({
-  primary = false,
-  size = "medium",
-  backgroundColor,
-  label,
-  ...props
-}: HamburgerIconProps) => {
-  const mode = primary
-    ? "styles-too-hamburgerIcon--primary"
-    : "styles-too-hamburgerIcon--secondary";
+export const HamburgerIcon = ({ type = 1 }: HamburgerIconProps) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive((current) => !current);
+  };
 
   return (
-    <button
-      type="button"
-      className={["styles-too-button", `styles-too-button--${size}`, mode].join(
-        " "
-      )}
-      style={{ backgroundColor }}
-      {...props}
+    <div
+      onClick={handleClick}
+      className={["hamburger", `${isActive ? "is-active" : ""}`].join(" ")}
+      id={`${"hamburger-" + type}`}
     >
-      {label}
-    </button>
+      <span className="line"></span>
+      <span className="line"></span>
+      <span className="line"></span>
+    </div>
   );
 };
 

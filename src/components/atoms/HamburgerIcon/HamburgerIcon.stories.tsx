@@ -9,29 +9,28 @@ const meta: Meta<typeof HamburgerIcon> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const TypeOne: Story = {
   args: {
-    primary: true,
-    label: "Button",
+    type: 1,
   },
 };
-
-export const Secondary: Story = {
+export const TypeSecond: Story = {
   args: {
-    label: "Button",
+    type: 2,
   },
 };
-
-export const Large: Story = {
+export const TypeThird: Story = {
   args: {
-    size: "large",
-    label: "Button",
+    type: 3,
   },
 };
-
-export const Small: Story = {
+export const TypeFourth: Story = {
   args: {
-    size: "small",
-    label: "Button",
+    type: 4,
+  },
+};
+export const TypeFifth: Story = {
+  args: {
+    type: 5,
   },
 };
