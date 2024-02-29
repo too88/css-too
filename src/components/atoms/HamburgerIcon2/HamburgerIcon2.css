@@ -2,8 +2,6 @@
 
 .ham {
   cursor: pointer;
-  display: block;
-  margin: 0px auto;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
   -moz-user-select: none;
@@ -14,9 +12,7 @@
 .hamRotate.is-active {
   transform: rotate(45deg);
 }
-.hamRotate180.is-active {
-  transform: rotate(180deg);
-}
+
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
