@@ -1,5 +1,11 @@
 /* GENERAL */
 
+.container {
+  margin: 8px auto;
+  display: flex;
+  justify-content: center;
+}
+
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;

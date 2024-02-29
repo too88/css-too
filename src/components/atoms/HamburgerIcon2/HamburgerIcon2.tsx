@@ -23,21 +23,23 @@ export const HamburgerIcon2 = ({
   };
 
   return (
-    <svg
-      className={[
-        "ham",
-        `${"ham" + type}`,
-        `${isRotate ? "hamRotate" : ""}`,
-        `${isActive ? "is-active" : ""}`,
-      ].join(" ")}
-      viewBox="0 0 100 100"
-      width="80"
-      onClick={handleClick}
-    >
-      <path className="line top" d={dTop} />
-      <path className="line middle" d={dMiddle} />
-      <path className="line bottom" d={dBottom} />
-    </svg>
+    <div className="container">
+      <svg
+        className={[
+          "ham",
+          `${"ham" + type}`,
+          `${isRotate ? "hamRotate" : ""}`,
+          `${isActive ? "is-active" : ""}`,
+        ].join(" ")}
+        viewBox="0 0 100 100"
+        width="80"
+        onClick={handleClick}
+      >
+        <path className="line top" d={dTop} />
+        <path className="line middle" d={dMiddle} />
+        <path className="line bottom" d={dBottom} />
+      </svg>
+    </div>
   );
 };
 
