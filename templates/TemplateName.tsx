@@ -15,7 +15,7 @@ export const TemplateName = ({ type = 1 }: TemplateNameProps) => {
   return (
     <div
       onClick={handleClick}
-      className={[`${isActive ? "is-active" : ""}`].join(" ")}
+      className={["container", `${isActive ? "is-active" : ""}`].join(" ")}
       id={`${"template-" + type}`}
     ></div>
   );
