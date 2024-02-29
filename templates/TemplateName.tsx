@@ -1,40 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./templateName.css";
 
 interface TemplateNameProps {
-  primary?: boolean;
-
-  backgroundColor?: string;
-
-  size?: "small" | "medium" | "large";
-
-  label: string;
-
-  onClick?: () => void;
+  type?: number;
 }
 
-export const TemplateName = ({
-  primary = false,
-  size = "medium",
-  backgroundColor,
-  label,
-  ...props
-}: TemplateNameProps) => {
-  const mode = primary
-    ? "styles-too-templateName--primary"
-    : "styles-too-templateName--secondary";
+export const TemplateName = ({ type = 1 }: TemplateNameProps) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive((current) => !current);
+  };
 
   return (
-    <button
-      type="button"
-      className={["styles-too-button", `styles-too-button--${size}`, mode].join(
-        " "
-      )}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <div
+      onClick={handleClick}
+      className={[`${isActive ? "is-active" : ""}`].join(" ")}
+      id={`${"template-" + type}`}
+    ></div>
   );
 };
 
