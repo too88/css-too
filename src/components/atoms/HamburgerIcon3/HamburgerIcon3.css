@@ -4,10 +4,10 @@
 #hamburger-icon3-2,
 #hamburger-icon3-3,
 #hamburger-icon3-4 {
-  width: 60px;
-  height: 45px;
+  width: 3.75rem;
+  height: 2.8125rem;
   position: relative;
-  margin: 50px auto;
+  margin: 8px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -24,10 +24,10 @@
 #hamburger-icon3-4 span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 0.5625rem;
   width: 100%;
   background: #333;
-  border-radius: 9px;
+  border-radius: 0.5625rem;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -42,19 +42,19 @@
 
 /* TYPE ONE */
 #hamburger-icon3-1 span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 #hamburger-icon3-1 span:nth-child(2) {
-  top: 18px;
+  top: 1.125rem;
 }
 
 #hamburger-icon3-1 span:nth-child(3) {
-  top: 36px;
+  top: 2.25rem;
 }
 
 #hamburger-icon3-1.is-active span:nth-child(1) {
-  top: 18px;
+  top: 1.125rem;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -63,11 +63,11 @@
 
 #hamburger-icon3-1.is-active span:nth-child(2) {
   opacity: 0;
-  left: -60px;
+  left: -3.75rem;
 }
 
 #hamburger-icon3-1.is-active span:nth-child(3) {
-  top: 18px;
+  top: 1.125rem;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -79,7 +79,7 @@
 #hamburger-icon3-2 span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 0.5625rem;
   width: 50%;
   background: #333;
   opacity: 1;
@@ -95,27 +95,27 @@
 
 #hamburger-icon3-2 span:nth-child(even) {
   left: 50%;
-  border-radius: 0 9px 9px 0;
+  border-radius: 0 0.5625rem 0.5625rem 0;
 }
 
 #hamburger-icon3-2 span:nth-child(odd) {
-  left: 0px;
-  border-radius: 9px 0 0 9px;
+  left: 0;
+  border-radius: 0.5625rem 0 0 0.5625rem;
 }
 
 #hamburger-icon3-2 span:nth-child(1),
 #hamburger-icon3-2 span:nth-child(2) {
-  top: 0px;
+  top: 0;
 }
 
 #hamburger-icon3-2 span:nth-child(3),
 #hamburger-icon3-2 span:nth-child(4) {
-  top: 18px;
+  top: 1.125rem;
 }
 
 #hamburger-icon3-2 span:nth-child(5),
 #hamburger-icon3-2 span:nth-child(6) {
-  top: 36px;
+  top: 2.25rem;
 }
 
 #hamburger-icon3-2.is-active span:nth-child(1),
@@ -135,13 +135,13 @@
 }
 
 #hamburger-icon3-2.is-active span:nth-child(1) {
-  left: 5px;
-  top: 7px;
+  left: 0.3125rem;
+  top: 0.4375rem;
 }
 
 #hamburger-icon3-2.is-active span:nth-child(2) {
-  left: calc(50% - 5px);
-  top: 7px;
+  left: calc(50% - 0.3125rem);
+  top: 0.4375rem;
 }
 
 #hamburger-icon3-2.is-active span:nth-child(3) {
@@ -155,32 +155,32 @@
 }
 
 #hamburger-icon3-2.is-active span:nth-child(5) {
-  left: 5px;
-  top: 29px;
+  left: 0.3125rem;
+  top: 1.8125rem;
 }
 
 #hamburger-icon3-2.is-active span:nth-child(6) {
-  left: calc(50% - 5px);
-  top: 29px;
+  left: calc(50% - 0.3125rem);
+  top: 1.8125rem;
 }
 
 /* Icon 3 */
 
 #hamburger-icon3-3 span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 #hamburger-icon3-3 span:nth-child(2),
 #hamburger-icon3-3 span:nth-child(3) {
-  top: 18px;
+  top: 1.125rem;
 }
 
 #hamburger-icon3-3 span:nth-child(4) {
-  top: 36px;
+  top: 2.25rem;
 }
 
 #hamburger-icon3-3.is-active span:nth-child(1) {
-  top: 18px;
+  top: 1.125rem;
   width: 0%;
   left: 50%;
 }
@@ -200,7 +200,7 @@
 }
 
 #hamburger-icon3-3.is-active span:nth-child(4) {
-  top: 18px;
+  top: 1.125rem;
   width: 0%;
   left: 50%;
 }
@@ -208,7 +208,7 @@
 /* Icon 4 */
 
 #hamburger-icon3-4 span:nth-child(1) {
-  top: 0px;
+  top: 0;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -216,7 +216,7 @@
 }
 
 #hamburger-icon3-4 span:nth-child(2) {
-  top: 18px;
+  top: 1.125rem;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -224,7 +224,7 @@
 }
 
 #hamburger-icon3-4 span:nth-child(3) {
-  top: 36px;
+  top: 2.25rem;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -236,8 +236,8 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: -3px;
-  left: 8px;
+  top: -0.1875rem;
+  left: 0.5rem;
 }
 
 #hamburger-icon3-4.is-active span:nth-child(2) {
@@ -250,6 +250,6 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 39px;
-  left: 8px;
+  top: 2.4375rem;
+  left: 0.5rem;
 }
